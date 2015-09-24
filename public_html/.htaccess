@@ -1,0 +1,7 @@
+
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|robots\.txt|ci_imgs|ci_styles|calendar)
+#RewriteRule ^(.*)$ /igniter/index.php/$1 [L]
+RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteRule ^igniter/$ /igniter/index.php/$1 [L]
